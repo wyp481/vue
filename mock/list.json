@@ -1,0 +1,53 @@
+[
+	{
+		"daming":"传统糕点",
+		"xiangxi" :[
+			{
+				"imgSrc":"./images/goods-14.png",
+				"title":"我爱你的魅力",
+				"shuzi":"￥43",
+				"quchu":"￥56"
+			},
+			{
+				"imgSrc":"./images/goods-15.png",
+				"title":"我爱你的美丽",
+				"shuzi":"￥43",
+				"quchu":"￥56"
+			}
+		]
+	},
+	{
+		"daming":"绝味美食",
+		"xiangxi" :[
+			{
+				"imgSrc":"./images/goods-16.png",
+				"title":"我爱你的善良",
+				"shuzi":"￥43",
+				"quchu":"￥56"
+			},
+			{
+				"imgSrc":"./images/goods-2.png",
+				"title":"我爱你的幽默",
+				"shuzi":"￥43",
+				"quchu":"￥56"
+			}
+		]
+	},
+	{
+		"daming":"日韩料理",
+		"xiangxi" :[
+			{
+				"imgSrc":"./images/goods-3.png",
+				"title":"我爱你的撒娇",
+				"shuzi":"￥43",
+				"quchu":"￥56"
+			},
+			{
+				"imgSrc":"./images/goods-4.png",
+				"title":"我爱你的笑脸",
+				"shuzi":"￥43",
+				"quchu":"￥56"
+			}
+		]
+	}
+]

@@ -1,0 +1,2 @@
+!function(r){function n(e){if(t[e])return t[e].exports;var o=t[e]={exports:{},id:e,loaded:!1};return r[e].call(o.exports,o,o.exports,n),o.loaded=!0,o.exports}var t={};return n.m=r,n.c=t,n.p="",n(0)}([function(r,n,t){"use strict";t(1);var e=t(5),o=t(6);e.render(o)},function(r,n){},,,,function(r,n){"use strict";var t={render:function(r){var n=document.body;n.innerHTML=r+n.innerHTML}};r.exports=t},function(r,n){r.exports='<div class="">\tabc</div>'}]);
+//# sourceMappingURL=bundle.js.map

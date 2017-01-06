@@ -1,0 +1,68 @@
+<div class="m-index" id="m-index">
+	<header>
+	  <div class="swiper-container" id="index-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/goods-10.png"/></div>
+        <div class="swiper-slide"><img src="./images/goods-11.png"/></div>
+        <div class="swiper-slide"><img src="./images/goods-12.png"/></div>
+        <div class="swiper-slide"><img src="./images/goods-13.png"/></div>
+      </div>
+		<div class="swiper-pagination"></div>      
+    </div>
+    
+	</header>
+	
+		<nav>
+		
+			<input type="text" placeholder="请输入商品名进行搜索"/>
+			<input type="button" value="搜索" id="er"/>
+			<div class="yo-ico">&#xe606;</div>
+		</nav>
+		<article>
+			<ul>
+				<li v-for="item in list">
+					<div>
+					<h3>{{item.daming}}</h3><input type="button" value="查看更多"/>
+					</div>
+					<div>
+						<dl v-for="ite in item.xiangxi">
+							<dt><img :src="ite.imgSrc"/></dt>
+							<p>{{ite.title}}</p>
+							<dd>{{ite.shuzi}}<span>{{ite.quchu}}</span></dd>
+						</dl>
+						
+					</div>
+				</li>
+				
+				
+				<li>
+					<h5>2015-2016吃货网</h5>
+				</li>
+			</ul>
+		</article>
+	
+	<footer>
+		<ul>
+			<li class="active">
+				<i class="yo-ico">&#xe60e;</i>
+				<b>首页</b>
+			</li>
+			<li>
+				<i class="yo-ico">&#xe604;</i>
+				<b>分类</b>
+			</li>
+			<li>
+				<i class="yo-ico">&#xe603;</i>
+				<b>购物车</b>
+			</li>
+			<li>
+				<i class="yo-ico">&#xe60c;</i>
+				<b>我的订单</b>
+			</li>
+			<li>
+				<i class="yo-ico">&#xe612;</i>
+				<b>个人中心</b>
+			</li>
+		</ul>
+	</footer>
+</div>

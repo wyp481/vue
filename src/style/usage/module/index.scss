@@ -1,0 +1,193 @@
+@charset "utf-8";
+@import "./common.scss";
+@import "../libs/swiper.scss";
+.m-index {
+    /*display:flex;*/
+    /*flex-direction: column;*/
+   @include flexbox();
+   @include flex-direction(column);
+    height: 100%;
+    header {
+        height:2.1rem;
+        .swiper-container {
+        	width:100%;
+        	img{
+        		width: 100%;
+        		height: 2.1rem;
+        	}
+        }
+        
+    }
+   
+        /*/*flex: 1;*/
+       /*@include flex();*/
+       
+       nav {
+       	 width: 100%;
+       	 height: .45rem;
+       	 background: gray;
+       	 position: relative;
+       
+       	 input:first-child {
+       	 	width: 60%;
+       	 	background: white;
+       	 	height: .35rem;
+       	 	margin-left: .1rem;
+       	 	border-radius: 10px;
+       	 	margin-top: .05rem;
+       	 	text-align: center;
+  			border: 1px solid white;
+       	 }
+       	    #er {
+       	 	width: 13%;
+       	 	height: .35rem;
+       	 	background: yellow;
+       	 	margin-top: .05rem;
+       	 	margin-left: .4rem;
+   	 	    border-radius: 10px;
+   	 	    border: 1px solid yellow;
+       	 }
+       	 
+       	 	 div {
+       	 	position: absolute;
+       	 	width: .35rem;
+       	 	height: .35rem;
+       	 	left: .14rem;
+       	 	top: .06rem;
+       	 	font-size: .23rem;
+       	 	color: gray;
+       	 }
+       }
+       article {
+       	 /*flex: 1;*/
+      	@include flex();
+       	@include flexbox();
+       
+       	@include flex-direction(column);
+       	overflow-y: scroll;
+       	width: 100%;
+       
+       	background: white;
+       	border-bottom: 2px solid yellow;
+       		ul {
+       			li {
+       				width: 100%;
+       				h5 {
+       							height: .5rem;
+       							line-height: .5rem;
+       							text-align: center;
+       							font-size: .2rem;
+       							color: black;
+       							font-weight: bold;
+       						}
+       				div:first-child {
+       					height: .6rem;
+       					border-bottom: 1px solid gray;
+       					@include flexbox();
+       					h3 {
+       					font-size: .3rem;
+       					width: 40%;
+       					height: .5rem;
+       					line-height: .5rem;
+       					text-align: center;
+       					border-left: 3px solid red;
+       					color: black;
+       					margin-top: .05rem;
+	       				}
+	       				input {
+	       					font-size: .15rem;
+	       					width: 23%;
+	       					height: .4rem;
+	       					line-height: .4rem;
+	       					text-align: center;
+	       					border: 1px solid greenyellow;
+	       					color: cyan;
+	       					border-radius: 10px;
+	   					    margin-top: .1rem;
+	    					margin-left: 1rem;
+	       				}
+	       				
+       				}
+       				div:last-child {
+       					width: 100%;
+       					height: 2rem;
+       					@include flexbox();
+       					
+       					dl {
+       						
+       						width: 1.5rem;
+       						height: 2rem;
+   						    margin-left: .05rem;
+    						margin-right: .05rem;
+       						border: 1px solid gray;
+       						dt{
+       							width: 1.5rem;
+       							height: 1.5rem;
+       							img {
+   									width: 1.5rem;
+       								height: 1.5rem;
+       							}
+       							
+       						}
+       						p {
+       							width: 100%;
+       							height: .2rem;
+       							font-size: .15rem;
+       							color: red;
+       							color: black;
+   							    margin-left: .2rem;
+							    font-weight: bold;
+							    letter-spacing: 1px;
+       						}
+       						dd {
+       							width: 40%;
+       							height: .25rem;
+       							font-size: .2rem;
+       							color: red;
+       							margin-left: .2rem;
+       							span{
+       								margin-left: .3rem;
+       								color: black;
+       								font-size: .2rem;
+       								text-decoration: line-through;
+       							}
+       						}
+       						
+       					}
+       				}
+       			}
+       		}	
+       }
+    
+    footer {
+        height:.8rem;
+        z-index: 33;
+        background: white;
+        ul {
+        	@include flexbox();
+        	li {
+        		@include flex();
+        		&.active b,&.active i {
+        			color: red;
+        		}
+        		i,b {
+        			display: block;
+        			text-align: center;
+        		}
+        		i {
+        			font-size: .35rem;
+        			
+        		}
+        		b {
+        			font-size: .1rem;
+        		}
+        		
+        	}
+        }
+        
+    }
+    > * {
+        width:100%;
+        
+    }
+}
